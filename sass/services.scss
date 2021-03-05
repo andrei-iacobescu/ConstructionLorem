@@ -1,0 +1,930 @@
+@import "config"; 
+@import "utilities";
+
+
+
+
+body {
+    font-family: "Roboto",Arial,sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.37;
+}
+
+
+#requestQuote {
+    form {
+        input, select, textarea {
+            background-color: #f2f2f2;
+        }
+
+        input::placeholder,
+        textarea::placeholder,
+        option {
+            color: #797979;
+            font-weight: 600;
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-title {
+        margin-left: 3.1em;
+        margin-bottom: 0;
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+}
+
+.request {
+    background-color: $secondary-color;
+    color: #fff;
+    font-weight: 800;
+    font-size: .8rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+
+// Top Nav Button
+.inquire {
+    background-color: $secondary-color;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: .8rem;
+}
+
+
+
+// HEADER IMAGE
+// HEADER IMAGE
+
+#headerImg {
+    margin-bottom: 100px;
+    .card {
+        .card-img-overlay {
+            .container {
+                margin-bottom: 2em;
+
+                a {
+                    text-decoration: none;
+                    color: #D2D2D0;
+                    font-weight: 600;
+                    transition: .4s;
+                }
+                
+                a:hover {
+                    color: $secondary-color;
+                    transition: .4s;
+                }
+
+                span {
+                    font-weight: 600;
+                    color: #D2D2D0;
+                }
+            }
+        }
+    }
+}
+
+.parallax {
+    background-image: url("../images/pic-12.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65%;
+}
+
+
+.card-title {
+    font-size: 3.5rem;
+}
+
+.z-index {
+    z-index: 1;
+}
+
+.ftco-navbar-light {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+
+
+
+#services {
+    .card-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .col-md-4 {
+        margin-bottom: 5em;
+    }
+
+    .card {
+        width: 21rem;
+        height: 30rem;
+    }
+
+    .col-md-4:nth-child(6) {
+        img {
+            height: 49.4%;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: -21px;
+        margin: auto;
+        padding: 1.1em;
+        width: 250px;
+        font-size: .8rem;
+        font-weight: 700;
+        left: 0;
+        right: 0;
+
+    }
+
+    .fas {
+        position: absolute;
+        left: 121px;
+        top: 178px;
+        font-size: 3.5rem;
+        background-color: #fff;
+        color: $secondary-color;
+        padding: .3em;
+        border-radius: 50%;
+    }
+
+    .fa-landmark,
+    .fa-cog,
+    .fa-hammer {
+        transition: .5s;
+    }
+
+    .btn {
+        transition: .5s;
+    }
+}
+
+
+
+
+
+
+
+.footer {
+    .row {
+        .col, .col-4 {
+            & > .icon-wrapper i {
+                color: #ffffff;
+                background-color: $tertiary-color;
+                padding: 13px;
+                margin: 0 5px;
+                font-size: .8rem;
+                border-radius: 50%;
+                transition: .3s;
+            }
+
+
+           & > .icon-wrapper i:hover {
+                background-color: $secondary-color;
+                transition: .3s;
+            }
+
+           & > h6 {
+               font-weight: 600;
+               margin-bottom: 3em;
+           }
+            ul {
+                & li {
+                    color: #999999;
+                    padding-bottom: .6em;
+                & > a {
+                    color: #999999;
+                    text-decoration: none;
+                    transition: .3s;
+                }
+
+                & > a:hover {
+                    color: $secondary-color;
+                    transition: .3s;
+                }
+                
+                & > i {
+                    font-size: 1.3rem;
+                }
+                }
+            }
+        }
+    }
+
+
+
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        width: 56%;
+        height: 95px;
+        background: $secondary-color; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, $secondary-color 49%, $secondary-color 50%, #FC5E28 51%, #FC5E28 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, $secondary-color 49%,$secondary-color 50%,#FC5E28 51%,#FC5E28 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, $secondary-color 90%, $secondary-color 90%, #030918 80%,#030918 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ******************** MEDIA QUERIES ********************
+
+// LARGE SCREEN SIZES (LAPTOPS)
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .inquire-btn {
+        margin: 0 !important;
+        padding: 8px 0 !important;
+        width: 100% !important;
+        text-transform: uppercase !important;
+        font-size: 12.4px;
+    }
+
+   
+
+    
+        
+    
+
+
+
+
+    // SERVICES MODULE 
+
+    #services {
+        .container {
+            .row {
+                .col-md-4 {
+                    .card {
+                        width: 290px;
+                        height: 35rem;
+                    }
+
+                    .card-img-top {
+                        height: 260px; 
+                        object-fit: cover;
+                    }
+
+
+                    .card-body {
+                        i {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 80px;
+                            height: 70px;
+                            top: 210px;
+                            font-size: 2.8rem;
+                            background-color: #fff;
+                            color: $secondary-color;
+                            padding: .3em;
+                            border-radius: 50%;
+                        }
+
+                        .btn {
+                            position: absolute;
+                            bottom: -21px;
+                            margin: auto;
+                            padding: 1.1em;
+                            width: 130px;
+                            font-size: .8rem;
+                            font-weight: 700;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+   
+
+
+
+    // FOOTER 
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        width: 56%;
+        height: 90px;
+        background: $secondary-color; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, $secondary-color 49%, $secondary-color 50%, #FC5E28 51%, #FC5E28 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, $secondary-color 49%,$secondary-color 50%,#FC5E28 51%,#FC5E28 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(60deg, $secondary-color 90%, $secondary-color 90%, #030918 80%,#030918 90%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        & > p {
+            width: 70% !important;
+            margin-left: 0 !important;
+        }
+    }
+
+
+    .footer {
+        .row {
+            .col:nth-child(4) {
+                p:nth-child(4) {
+                    a {
+                        font-size: .96rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIUM-SIZE SCREENS (TABLETS)
+
+@media (min-width:767px) and (max-width:991px) {
+    .ftco-navbar-light {
+        position: relative;
+        top: 10px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #headerImg {
+        .card {
+            .card-img-overlay {
+                .container > p {
+                    width: 100% !important;
+                }
+
+                .container {
+                    .card-title {
+                        font-size: 2rem;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+  
+
+
+    #services {
+        .container {
+            .row {
+                .col-md-4 {
+                    .card {
+                        width: 200px;
+                        height: 35rem;
+                    }
+
+                    .card-img-top {
+                        height: 260px; 
+                        object-fit: cover;
+                    }
+
+
+                    .card-body {
+                        i {
+                            position: absolute;
+                            left: 65px;
+                            top: 210px;
+                            font-size: 2.8rem;
+                            background-color: #fff;
+                            color: $secondary-color;
+                            padding: .3em;
+                            border-radius: 50%;
+                        }
+
+                        .btn {
+                            position: absolute;
+                            bottom: -21px;
+                            margin: auto;
+                            padding: 1.1em;
+                            width: 130px;
+                            font-size: .8rem;
+                            font-weight: 700;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    
+
+
+   
+
+
+
+
+    .footer {
+        .col-md-6 {
+            margin-bottom: 3em;
+        }
+
+
+
+        .copyright {
+            position: absolute;
+            bottom: 0;
+            width: 56%;
+            height: 95px;
+            background: $secondary-color; /* Old browsers */
+                background: -moz-linear-gradient(-45deg, $secondary-color 49%, $secondary-color 50%, #FC5E28 51%, #FC5E28 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, $secondary-color 49%,$secondary-color 50%,#FC5E28 51%,#FC5E28 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(61deg, $secondary-color 90%, $secondary-color 90%, #030918 80%,#030918 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+            & > p {
+                width: 80% !important;
+            }
+        }
+    }
+
+
+}
+    
+
+
+
+
+
+// SMALL SCREEN SIZES
+
+@media (min-width: 575px) and (max-width: 766px) {
+
+    // NAV & HEADER
+    
+    .top-nav {
+        
+        ul {
+            
+            margin-right: 0 !important;
+            li {
+                padding: 4px 12px !important;
+                
+                margin: 0;
+            }
+        }
+    }
+
+
+    .top-header {
+        .container {
+            flex-direction: column;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+
+            p.logoipsum {
+                margin-bottom: 0;
+                width: 40% !important;
+            }
+
+        }
+    }
+
+
+    .inquire {
+        background-color: $secondary-color;
+        color: #FFFFFF;
+        font-weight: 800;
+        font-size: .8rem;
+        width: 100%;
+        border-radius: 20px !important;
+        margin-top: 1em !important;
+    }
+
+
+    .ftco-navbar-light {
+        position: relative;
+        top: 10px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #headerImg {
+        .card {
+            .card-img-overlay {
+                .container > p {
+                    width: 100% !important;
+                }
+
+                .container {
+                    .card-title {
+                        font-size: 2rem;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+   
+
+
+    // END NAV & HEADER
+
+
+
+    // WELCOME MODULE
+
+   
+
+
+
+    // SERVICES MODULE
+
+    #services {
+        .container {
+            h1 {
+                font-size: 2rem;
+                
+            }
+            .row {
+                .col-md-4 {
+                    .card {
+                        width: 100%;
+                        height: 30rem;
+                        margin-bottom: 4em;
+                    }
+
+                    .card-img-top {
+                        height: 260px; 
+                        object-fit: cover;
+                    }
+
+
+                    .card-body {
+                        i {
+                            position: absolute;
+                            left: 219px;
+                            top: 210px;
+                            font-size: 2.8rem;
+                            background-color: #fff;
+                            color: $secondary-color;
+                            padding: .3em;
+                            border-radius: 50%;
+                        }
+
+                        .btn {
+                            position: absolute;
+                            bottom: -21px;
+                            margin: auto;
+                            padding: 1.1em;
+                            width: 75%;
+                            font-size: .8rem;
+                            font-weight: 700;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+   
+
+
+    // FOOTER
+
+    .footer {
+        .col-md-6 {
+            margin-bottom: 3em;
+        }
+
+
+
+        .copyright {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 87%;
+            height: 95px;
+            background: $secondary-color; /* Old browsers */
+                background: -moz-linear-gradient(-45deg, $secondary-color 49%, $secondary-color 50%, #FC5E28 51%, #FC5E28 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, $secondary-color 49%,$secondary-color 50%,#FC5E28 51%,#FC5E28 100%); /* Chrome10-25,Safari5.1-6 */
+                // background: linear-gradient(66deg, $secondary-color 90%, $secondary-color 90%, #030918 80%,#030918 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+            & > p {
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 6px !important;
+            }
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+// EXTRA SMALL SCREENS <576px
+
+@media (min-width: 320px) and (max-width: 575px) {
+    // NAV & HEADER
+    
+    .top-nav {
+        .container {
+            flex-direction: column;
+            p {
+                margin-right: auto !important;
+                margin-left: auto;
+                margin-bottom: .3em !important;
+            }
+        }
+        ul {
+            
+            margin-right: auto !important;
+            margin-left: auto !important;
+            li {
+                padding: 4px 12px !important;
+                
+                margin: 0;
+            }
+        }
+    }
+
+
+    .top-header {
+        .container {
+            flex-direction: column;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+
+            p.logoipsum {
+                margin-bottom: 0;
+                width: 40% !important;
+            }
+
+        }
+    }
+
+
+    .inquire {
+        background-color: $secondary-color;
+        color: #FFFFFF;
+        font-weight: 800;
+        font-size: .8rem;
+        width: 100%;
+        border-radius: 20px !important;
+        margin-top: 1em !important;
+    }
+
+
+    .ftco-navbar-light {
+        position: relative;
+        top: 10px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding: 0;
+        overflow: hidden;
+    }
+
+
+    #headerImg {
+        .card {
+            .card-img-overlay {
+                .container > p {
+                    width: 100% !important;
+                }
+
+                .container {
+                    .card-title {
+                        font-size: 2rem;
+                    }
+                    button {
+                        margin: 6px 0;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+   
+
+
+    // END NAV & HEADER
+
+
+
+    // WELCOME MODULE
+
+    
+
+
+
+
+
+
+
+    // SERVICES MODULE
+
+    #services {
+        .container {
+            h1 {
+                font-size: 2rem;
+                
+            }
+            .row {
+                .col-md-4 {
+                    .card {
+                        width: 100%;
+                        height: 30rem;
+                        margin-bottom: 4em;
+                    }
+
+                    .card-img-top {
+                        height: 260px; 
+                        object-fit: cover;
+                    }
+
+
+                    .card-body {
+                        i {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 80px;
+                            top: 210px;
+                            font-size: 2.8rem;
+                            background-color: #fff;
+                            color: $secondary-color;
+                            padding: .3em;
+                            border-radius: 50%;
+                        }
+
+                        .btn {
+                            position: absolute;
+                            bottom: -21px;
+                            margin: auto;
+                            padding: 1.1em;
+                            width: 75%;
+                            font-size: .8rem;
+                            font-weight: 700;
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    
+
+    // FOOTER
+
+    .footer {
+        .col-md-6 {
+            margin-bottom: 3em;
+        }
+
+
+
+        .copyright {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 87%;
+            height: 95px;
+            text-align: center;
+            background: $secondary-color; /* Old browsers */
+                background: -moz-linear-gradient(-45deg, $secondary-color 49%, $secondary-color 50%, #FC5E28 51%, #FC5E28 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg, $secondary-color 49%,$secondary-color 50%,#FC5E28 51%,#FC5E28 100%); /* Chrome10-25,Safari5.1-6 */
+                // background: linear-gradient(66deg, $secondary-color 90%, $secondary-color 90%, #030918 80%,#030918 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+            & > p {
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 6px !important;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+//   }

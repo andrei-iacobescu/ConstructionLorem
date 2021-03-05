@@ -1,0 +1,127 @@
+.primary-bc {
+    background-color: $primary-color;
+}
+
+.secondary-bc {
+    background-color: $secondary-color;
+}
+
+.tertiary-bc {
+    background-color: $tertiary-color;
+}
+
+.fifth-bc {
+    background-color: $fifth-color;
+}
+
+.primary-tc {
+    color: $primary-color;
+}
+
+.secondary-tc {
+    color: $secondary-color;
+}
+
+.tertiary-tc {
+    color: $tertiary-color;
+}
+
+.fourth-tc {
+    color: #999999;
+}
+
+
+.fourth-bc {
+    background-color: #EDEDED;
+}
+
+
+.active-primary {
+    background-color: $primary-color;
+}
+
+.active-secondary {
+    background-color: $secondary-color;
+}
+
+
+.object-fit {
+    object-fit: cover;
+}
+
+
+.overlay-shadow {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.overlay-shadow-2 {
+    background-color: rgba(7,17,36,0.85);
+}
+
+.parallax {
+    background-image: url("../images/card-resize-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.line-h {
+    line-height: 1.8;
+    letter-spacing: 0.4;
+}
+
+.text-grey {
+    color: #CED0D3;
+}
+
+
+.m-bot {
+    margin-bottom: 150px;
+}
+
+
+
+// JQUERY CLASSES 
+
+.project-onHover {
+    background-color: #FC5E28 !important;
+    color: #FFFFFF;
+    transition: .3s;
+    .tag {
+        background-color: #ed3e03;
+        color: #fff;
+        transition: .3s;
+    }
+
+    .loc-txt {
+        color: #fff !important;
+        transition: .3s;
+    }
+    
+
+    i {
+        color: #fff;
+        transition: .3s;
+    } 
+}
+
+.loc-txt {
+    color: #fff;
+}
+
+
+.letter-spacing {
+    letter-spacing: -1;
+}
+
+.white-space {
+    white-space: nowrap;
+}
+
+
+
+.custom-w {
+    width: 700px;
+}
